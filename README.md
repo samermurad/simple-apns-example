@@ -12,7 +12,7 @@ Successfully running and using this project requires:
 - Either an iOS APNs activated Service Key or a paid iOS Developer membership to generate a new Key.
 - An iOS Device and it's Push Notifications Token
   - Can be obtained either by creating a sample app that implements the push notification APIs
-  - Using the iOS Example App for Provisional Push Notifications for which this project was originally built for: (ADD_LINK_TO_APP) 
+  - Using the iOS Example App for Provisional Push Notifications for which this project was originally built for, [source code](https://github.com/samermurad/ios-provisional-push)
 
 ## Installation
 

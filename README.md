@@ -12,7 +12,7 @@ Successfully running and using this project requires:
 - Either an iOS APNs activated Service Key or a paid iOS Developer membership to generate a new Key.
 - An iOS Device and it's Push Notifications Token
   - Can be obtained either by creating a sample app that implements the push notification APIs
-  - Using the iOS Example App for Provisional Push Notifications for which this project was originally built: (ADD_LINK_TO_APP) 
+  - Using the iOS Example App for Provisional Push Notifications for which this project was originally built for: (ADD_LINK_TO_APP) 
 
 ## Installation
 
@@ -100,6 +100,9 @@ req.body: {
     token: '<OPTIONAL_IOS_DEVICE_TOKEN>',
     // or
     userName: '<OPTIONAL_USERNAME>',
+    
+    title: '<OPTIONAL_TITLE>', // defualts to "Provisional"
+    message: '<OPTIONAL_MESSAGE>', // defaults to 'Test Notification ' + new Date().getTime()
 }
 
 res {

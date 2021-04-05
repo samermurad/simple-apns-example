@@ -12,7 +12,7 @@ const healthCheck = async (req, res) => {
 }
 
 const sendNotification = async (req, res) => {
-  const { token, userName } = req.body;
+  const { token, userName, title, message } = req.body;
   let deviceToke = token
   if (!userName && !token) throw new ServerError('Missing UserName / Token')
   if (userName) {
@@ -24,8 +24,7 @@ const sendNotification = async (req, res) => {
   }
 
   if (!deviceToke) throw new ServerError('missing Token');
-
-  const data = await push.send({ token: deviceToke })
+  const data = await push.send({ token: deviceToke, title, body: message })
 
   res.status(200).json(data)
 };

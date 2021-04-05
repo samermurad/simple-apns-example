@@ -1,5 +1,8 @@
+# ignore cache
 UserTokens.json
+# Ignore .env file
 .env
+# Ignore iOS Key
 *.p8
 
 .idea/

@@ -36,6 +36,7 @@ module.exports = {
     let notification = new apn.Notification({ topic: settings.bundleId });
     notification.body = body;
     notification.title = title;
+    notification.sound = "bingbong.aiff";
     return provider.send(notification, token)
   },
   shutdown: () => provider.shutdown(),

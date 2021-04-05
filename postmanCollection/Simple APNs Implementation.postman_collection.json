@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "abf5b8f7-914c-48c7-b4eb-905b37e291cc",
+		"name": "Simple APNs Implementation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3090/send",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \n   \"userName\": \"<USER_NAME>\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3090/send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3090",
+					"path": [
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3090/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \n   \"userName\": \"<USER_NAME>\",\n   \"token\": \"<DEVICE_TOKEN>\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3090/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3090",
+					"path": [
+						"save"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
